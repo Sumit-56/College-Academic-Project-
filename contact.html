@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Merriweather:ital,wght@1,700&family=Oxanium:wght@400;600;700&family=Playfair+Display:ital,wght@1,600&family=Recursive&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!---------------HEADER--------------->
+     <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logo.png" alt=""></a>
+        <div class="nav-links" id="hideMenu()">
+          <i class="ri-close-line" onclick="hideMenu()"></i>
+         <ul>
+          <li> <i class="ri-home-wifi-fill"></i>  <a href="index.html">Home</a></li>
+          <li> <i class="ri-contacts-book-2-fill"></i> <a href="about.html">About</a></li>
+          <li> <i class="ri-book-fill"></i> <a href="courses.html">Courses</a></li>
+          <li> <i class="ri-wordpress-fill"></i> <a href="blog.html">Blog</a></li>
+          <li> <i class="ri-contacts-book-2-fill"></i> <a href="contact.html">Contact</a></li>
+          <li> <i class="ri-question-fill"></i> <a href="#">Help</a></li>
+         </ul>
+        </div>
+        <i class="ri-menu-line" onclick="showMenu()"></i>
+      </nav>
+      <h1>  Contact Us</h1>
+     </section> 
+     <!---------CONTACT US---------->
+       <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14411.76556444471!2d78.57744015!3d25.440222900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694909814594!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </section>
+
+       <section class="contact-us">
+        <div class="row">
+          <div class="contact-col">
+            <div>
+              <i class="ri-home-wifi-fill"></i>
+              <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>Jhansi, Uttar Pradesh</p>
+              </span>
+            </div>
+             <div>
+              <i class="ri-whatsapp-line"></i>
+              <span>
+                <h5>+91 953159756</h5>
+                <p>Monday to Saturday, 10AM to 6PM</p>
+              </span>
+            </div>
+            <div>
+              <i class="ri-mail-send-line"></i>
+              <span>
+                <h5>20sumikris@gmail.com</h5>
+                <p>Email us your query</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="formhandler.php" method="post">
+              <input type="text"  name="name" placeholder="Enter your Name" required>
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <input type="text" name="subject" placeholder="subject" required>
+              <textarea  rows="8" name="message" placeholder="message" required></textarea>
+              <button type="submit" class="hero-btn red-btn">Send message</button>
+            </form>
+
+
+          </div>
+        </div>
+       </section>
+             <!--FOOTER-->  
+             <hr>
+             <section class="footer">
+              <h4>
+                About Us
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Optio vero quo
+                d eum incidunt? Rerum br
+                neque cum <br> maiores d
+                ignissimos unde omnis est <br> optio voluptates dolorum, sit sunt repellat 
+                reiciendis? Non, illo?
+              </p> 
+              <div class="icons">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-youtube-fill"></i>
+              </div>
+              <p><i class="ri-copyright-line"></i>2023 Design and Hosted by Sumit Kumar</p>
+             </section>
+     <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+        navLinks.style.right = "0";
+       } 
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+       }
+     </script>
+</body>
+</html>
